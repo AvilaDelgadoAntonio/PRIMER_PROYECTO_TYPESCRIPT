@@ -1,0 +1,16 @@
+{
+  "name": "1030_nodejs",
+  "version": "1.0.0",
+  "description": "Creamos un nuevo proyecto y dentro de esa carpeta: >npm init --yes Si queremos instalar el typescript en el propio proyecto y como dependencia de Desarrollo (-D) >npm install typescript -D (npx equivale para ejecutar un comando que no está en el sistema y sí en el proyecto) >npx tsc --init Se genera el tsconfig.json y en el hacemos las modificaciones de siempre: '\"target\": \"es6\",', '\"outDir\": \"./dist\",' y en la linea 68 ponemos lo siguiente para que no compile los js que pudiera haber en node_modules): },   \"exclude\": [     \"node_modules\"   ]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.9.6"
+  }
+}
